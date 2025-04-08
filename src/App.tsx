@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Layout from "./components/Layout";
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <Layout>
+    
+      <section className="container bg-shade-800 min-h-screen py-28" id="home">
+      <h1 className="text-6xl font-bold text-shade-100">
+        Hi, I'm <span className="text-primary">Lara</span>
+      </h1>
+
+      <p className="text-3xl font-bold text-shade-100">
+        I'm a <span className="text-primary">Fullstack Developer</span>
       </p>
-    </>
-  )
+
+      <p
+        className="text-base font-medium text-shade-100 mt-2">
+        I’m an aspiring Fullstack Developer graduating in 2026, with
+        a strong foundation in both front-end and back-end development.
+      </p>
+
+      <p className="text-base font-medium text-shade-100 mt-6">
+        I’m currently seeking a LIA position for the fall of 2025, where
+        I can apply my skills, grow, and contribute to projects.
+      </p>
+      </section>
+
+      <section className="bg-shade-700 w-full min-h-screen py-28" id="about-me">
+      {/* About Me */}
+      </section>
+
+      <section className="bg-shade-800 min-h-screen py-28" id="education-projects">
+      {/* Education & Projects */}
+      </section>
+
+      <section className="bg-shade-700 min-h-screen py-28 text-white" id="skills">
+        {/* Skills */}
+      </section>
+
+      <section className="bg-shade-800 min-h-screen py-28" id="contact">
+        {/* Contact */}
+      </section>
+
+
+    </Layout>
+  );
 }
 
-export default App
+export default App;
