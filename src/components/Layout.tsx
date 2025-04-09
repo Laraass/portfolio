@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Header from "./Header";
 
 interface LayoutProps {
   children: ReactNode;
@@ -7,8 +8,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="flex flex-col items-center bg-shade-800 text-shade-100">
-      {/* Header component */}
-      {/* <Header /> */}
+      <Header />
 
       <main className="min-h-screen w-full max-w-5xl flex-1 px-4 pb-20 pt-24 md:pb-16 md:pt-28">
         {children}
