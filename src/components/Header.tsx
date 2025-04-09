@@ -52,7 +52,7 @@ const Header = () => {
           setActiveButton("education");
         }}
       >
-        Education & Projects
+        About me
       </button>
       <button
         className={`${buttonClasses} ${
@@ -63,7 +63,7 @@ const Header = () => {
           setActiveButton("about");
         }}
       >
-        About me
+        Education & Projects
       </button>
       <button
         className={`${buttonClasses} ${
