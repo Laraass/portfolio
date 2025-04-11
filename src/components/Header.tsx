@@ -119,7 +119,7 @@ const Header = () => {
           >
             <Icon
               icon="lineicons:menu-hamburger-1"
-              className="text-primary size-9"
+              className="text-primary size-9 cursor-pointer"
             />
           </button>
         </div>
