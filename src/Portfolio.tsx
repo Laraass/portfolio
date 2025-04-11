@@ -1,7 +1,10 @@
 import Layout from "./components/Layout";
 import Header from "./components/Header";
 import Home from "./sections/Home";
-import "./index.css";
+import About from "./sections/About";
+import EducationProjects from "./sections/EducationProjects";
+import Contact from "./sections/Contact";
+import Skills from "./sections/Skills";
 
 <Header />;
 
@@ -9,29 +12,15 @@ function App() {
   return (
     <Layout>
       <Home />
-      <section className="bg-shade-700 w-full min-h-screen py-28" id="about-me">
-        {/* About Me */}
-      </section>
+      <About />
+      <EducationProjects />
+      <Skills />
 
-      <section
-        className="bg-shade-800 min-h-screen py-28"
-        id="education-projects"
-      >
-        {/* Education & Projects */}
-      </section>
-
-      <section
-        className="bg-shade-700 min-h-screen py-28 text-white"
-        id="skills"
-      >
-        {/* Skills */}
-      </section>
-
-      <section className="bg-shade-800 min-h-screen py-28" id="contact">
-        {/* Contact */}
-      </section>
+      <Contact />
     </Layout>
   );
 }
+
+// Footer
 
 export default App;
