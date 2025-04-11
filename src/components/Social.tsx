@@ -9,10 +9,10 @@ type SocialProps = {
 const Social: React.FC<SocialProps> = ({ children, link, ariaLabel }) => {
   return (
     <a
-        href={link}
-        aria-label={ariaLabel}
-        target="_blank"
-        rel="noopener noreferrer"
+      href={link}
+      aria-label={ariaLabel}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`
         size-12 rounded-full border-2 border-primary 
         flex items-center justify-center 
@@ -23,9 +23,7 @@ const Social: React.FC<SocialProps> = ({ children, link, ariaLabel }) => {
         cursor-pointer
       `}
     >
-      <div className="text-shade-100">
-        {children}
-      </div>
+      <div className="text-shade-100">{children}</div>
     </a>
   );
 };
