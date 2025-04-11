@@ -1,16 +1,14 @@
 import Layout from "./components/Layout";
 import Header from "./components/Header";
-import Social from "./components/Social";
-import { Icon } from "@iconify/react";
-import { TypeAnimation } from "react-type-animation";
-
+import Home from "./sections/Home";
 import "./index.css";
 
-<Header></Header>;
+<Header />;
 
 function App() {
   return (
     <Layout>
+      <Home />
       <section className="bg-shade-700 w-full min-h-screen py-28" id="about-me">
         {/* About Me */}
       </section>
