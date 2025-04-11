@@ -1,5 +1,7 @@
 import Layout from "./components/Layout";
 import Header from "./components/Header";
+import Social from "./components/Social";
+import { Icon } from "@iconify/react";
 import { TypeAnimation } from "react-type-animation";
 
 import "./index.css";
@@ -24,9 +26,12 @@ function App() {
               <span className="text-primary animate-typewriter">
                 <TypeAnimation
                   sequence={[
-                    "Fullstack Developer", 1000,
-                    "Frontend Developer", 1000,
-                    "Backend Developer", 1000,
+                    "Fullstack Developer",
+                    1000,
+                    "Frontend Developer",
+                    1000,
+                    "Backend Developer",
+                    1000,
                   ]}
                   wrapper="span"
                   speed={30}
@@ -46,6 +51,23 @@ function App() {
           I’m currently seeking a LIA internship between November 2025 and April
           2026, where I can apply my skills, evolve and contribute to projects!
         </p>
+
+        <div className="flex flex-row gap-4">
+          <Social
+            link="https://www.linkedin.com/in/lara-salman-00224b1b2/"
+            ariaLabel="LinkedIn profile"
+          >
+            <Icon icon="ri:linkedin-fill" className="size-6" />
+          </Social>
+
+          <Social link="https://github.com/Laraass" ariaLabel="GitHub profile">
+            <Icon icon="mdi:github" className="size-6" />
+          </Social>
+
+          <Social link="" ariaLabel="My CV (Opens in new tab)">
+            <Icon icon="tabler:file-cv-filled" className="size-6" />
+          </Social>
+        </div>
       </section>
 
       <section className="bg-shade-700 w-full min-h-screen py-28" id="about-me">
