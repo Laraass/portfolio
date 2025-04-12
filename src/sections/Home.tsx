@@ -6,11 +6,10 @@ import { TypeAnimation } from "react-type-animation";
 const Home: React.FC = () => {
   return (
     <section
-      className="flex flex-col gap-4 items-center justify-center min-h-screen max-w-3xl mx-auto"
+      className="flex flex-col gap-4 items-center justify-center min-h-screen max-w-3xl py-22 mx-auto"
       id="home"
-      data-aos="fade"
     >
-      <div className="flex flex-col md:flex-row gap-9 items-center">
+      <div className="flex flex-col sm:flex-row gap-9 items-center">
         {/* Image */}
         <img
           src="/me.png"
@@ -51,7 +50,7 @@ const Home: React.FC = () => {
 
           <p className="text-base font-medium text-shade-100">
             I’m an aspiring Fullstack Developer graduating in 2026, with a
-            strong foundation in both front-end and back-end development.
+            strong foundation in both frontend and backend development.
           </p>
 
           <p className="text-base font-medium text-shade-100">
