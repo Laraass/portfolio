@@ -8,42 +8,45 @@ const Home: React.FC = () => {
     <section
       className="flex flex-col gap-4 items-center justify-center min-h-screen max-w-3xl mx-auto"
       id="home"
+      data-aos="fade"
     >
-      <div className="flex flex-col md:flex-row gap-9">
+      <div className="flex flex-col md:flex-row gap-9 items-center">
         {/* Image */}
         <img
           src="/me.png"
           alt="Me"
-          className="w-64 md:w-80 rounded-md border-2 border-primary 
+          className="w-64 md:w-90 rounded-md border-2 border-primary 
         transition-all duration-300
         hover:shadow-[0_0_20px_5px_#836AED]"
         />
 
         {/* Text content */}
-        <div className="flex flex-col gap-4 justify-center">
-          <h1 className="text-5xl font-bold text-shade-100">
-            Hi I'm <span className="text-primary">Lara,</span>
-          </h1>
+        <div className="flex flex-col gap-3">
+          <div className="gap-2">
+            <h1 className="text-5xl font-bold text-shade-100">
+              Hi I'm <span className="text-primary">Lara,</span>
+            </h1>
 
-          <div className="flex flex-row gap-2 items-center">
-            <p className="text-3xl font-bold text-shade-100">
-              A{" "}
-              <span className="text-primary animate-typewriter">
-                <TypeAnimation
-                  sequence={[
-                    "Fullstack Developer",
-                    1000,
-                    "Frontend Developer",
-                    1000,
-                    "Backend Developer",
-                    1000,
-                  ]}
-                  wrapper="span"
-                  speed={30}
-                  repeat={Infinity}
-                />
-              </span>
-            </p>
+            <div className="flex flex-row items-center">
+              <p className="text-3xl font-bold text-shade-100">
+                A{" "}
+                <span className="text-primary animate-typewriter">
+                  <TypeAnimation
+                    sequence={[
+                      "Fullstack Developer",
+                      1000,
+                      "Frontend Developer",
+                      1000,
+                      "Backend Developer",
+                      1000,
+                    ]}
+                    wrapper="span"
+                    speed={30}
+                    repeat={Infinity}
+                  />
+                </span>
+              </p>
+            </div>
           </div>
 
           <p className="text-base font-medium text-shade-100">

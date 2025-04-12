@@ -2,7 +2,7 @@ import React from "react";
 
 const EducationProjects: React.FC = () => {
   return (
-    <section className="min-h-screen py-28" id="education-projects">
+    <section data-aos="fade-up" className="min-h-screen py-28" id="education-projects">
       {/* Education & Projects */}
     </section>
   );
