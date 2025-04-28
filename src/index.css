@@ -12,6 +12,8 @@
     --color-shade-100: #F5F5F5;
 }
 
+@plugin 'tailwind-scrollbar';
+
 /* Styles */
 body {
     font-family: "Poppins";

@@ -23,7 +23,7 @@ const Skill: React.FC<SkillProps> = ({
                  bg-shade-900 shadow-[0_0_10px_1px_#836AED]"
         aria-label={ariaLabel}
       >
-        <Icon icon={skillIcon} className={`${size} ${color ?? "inherit"}`} />
+        <Icon icon={skillIcon} className={size} style={{ color: color ?? "inherit" }} />
       </div>
       <p className="text-base text-shade-100 text-center">{label}</p>
     </div>
