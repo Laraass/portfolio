@@ -18,7 +18,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, children }) => {
     >
       <div className="flex flex-col gap-4 px-2">
         <h3 className="text-xl font-semibold text-primary">{title}</h3>
-        <div className="flex flex-row gap-5 overflow-x-auto w-full p-2 ">
+        <div className="flex flex-row gap-5 overflow-x-auto w-full p-2 scrollbar-thin scrollbar-thumb-primary scrollbar-track-transparent">
           {children}
         </div>
       </div>
