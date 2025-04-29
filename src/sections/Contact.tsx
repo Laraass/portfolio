@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   if (state.succeeded) {
     return (
       <section className="min-h-screen flex justify-center items-center">
-        <p className="text-primary text-xl font-semibold">
+        <p className="text-primary text-xl font-semibold text-center">
           Message sent. I'll get back to you soon!
         </p>
       </section>
