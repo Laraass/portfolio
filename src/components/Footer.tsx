@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             <Icon icon="mdi:github" className="size-6" />
           </Social>
 
-          <Social link="" ariaLabel="My CV (Opens in new tab)">
+          <Social link="/cv_sv_eng.pdf" ariaLabel="My CV (Opens in new tab)">
             <Icon icon="tabler:file-cv-filled" className="size-6" />
           </Social>
         </div>
