@@ -3,6 +3,7 @@ import clsx from "clsx";
 
 interface InputFieldProps {
   label?: string;
+  name?: string;
   placeholder: string;
   type?: "text" | "textarea";
   value: string;
@@ -13,6 +14,7 @@ interface InputFieldProps {
 
 const InputField: React.FC<InputFieldProps> = ({
   label,
+  name,
   placeholder,
   type = "text",
   value,
@@ -35,6 +37,7 @@ const InputField: React.FC<InputFieldProps> = ({
       {label && <label className="font-bold text-neutral-100">{label}</label>}
       {type === "textarea" ? (
         <textarea
+          name={name}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
@@ -44,6 +47,7 @@ const InputField: React.FC<InputFieldProps> = ({
       ) : (
         <input
           type="text"
+          name={name}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
