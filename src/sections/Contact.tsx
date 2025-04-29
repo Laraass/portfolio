@@ -1,12 +1,25 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import InputField from "../components/Inputfield";
 import Button from "../components/Button";
 
 const Contact: React.FC = () => {
+  const [state, handleSubmit] = useForm("mnndjzqv");
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+
+  if (state.succeeded) {
+    return (
+      <section className="min-h-screen flex justify-center items-center">
+        <p className="text-primary text-xl font-semibold">
+          Message sent. I'll get back to you soon!
+        </p>
+      </section>
+    );
+  }
 
   return (
     <section
@@ -15,8 +28,7 @@ const Contact: React.FC = () => {
       id="contact"
     >
       <form
-        action="https://formspree.io/f/mnndjzqv"
-        method="POST"
+        onSubmit={handleSubmit}
         className="flex flex-col gap-6 w-full max-w-lg items-center"
       >
         <h2 className="text-3xl font-bold text-primary">Contact me</h2>
@@ -36,6 +48,7 @@ const Contact: React.FC = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
 
         <InputField
           name="phone"
@@ -53,6 +66,12 @@ const Contact: React.FC = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+
         <Button text="Submit" type="submit" />
       </form>
     </section>
