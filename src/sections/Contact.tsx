@@ -14,13 +14,15 @@ const Contact: React.FC = () => {
       className="max-w-7xl min-h-screen py-28 mx-auto flex justify-center items-center"
       id="contact"
     >
-      <form 
-      action="https://formspree.io/f/mnndjzqv"
-      method="POST"
-      className="flex flex-col gap-6 w-full max-w-lg items-center">
+      <form
+        action="https://formspree.io/f/mnndjzqv"
+        method="POST"
+        className="flex flex-col gap-6 w-full max-w-lg items-center"
+      >
         <h2 className="text-3xl font-bold text-primary">Contact me</h2>
 
         <InputField
+          name="name"
           label="Full name"
           placeholder="Enter your name"
           value={name}
@@ -28,6 +30,7 @@ const Contact: React.FC = () => {
         />
 
         <InputField
+          name="email"
           label="E-mail"
           placeholder="Enter your e-mail"
           value={email}
@@ -35,6 +38,7 @@ const Contact: React.FC = () => {
         />
 
         <InputField
+          name="phone"
           label="Phone number"
           placeholder="Enter your phone number"
           value={phoneNumber}
@@ -42,6 +46,7 @@ const Contact: React.FC = () => {
         />
 
         <InputField
+          name="message"
           label="Message"
           placeholder="Write your message..."
           type="textarea"
