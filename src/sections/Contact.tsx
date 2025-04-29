@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button text="Submit" onClick={() => alert("Message sent!")} />
+        <Button text="Submit" type="submit" />
       </form>
     </section>
   );
