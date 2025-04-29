@@ -20,6 +20,8 @@ const Social: React.FC<SocialProps> = ({ children, link, ariaLabel }) => {
         group
         hover:bg-shade-900 
         hover:shadow-[0_0_20px_5px_#836AED]
+        active:bg-shade-900 
+        active:shadow-[0_0_20px_5px_#836AED]
         cursor-pointer
       `}
     >
