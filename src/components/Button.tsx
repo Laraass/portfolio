@@ -7,7 +7,12 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset";
 };
 
-const Button: React.FC<ButtonProps> = ({ text, id, onClick, type = "button" }) => {
+const Button: React.FC<ButtonProps> = ({
+  text,
+  id,
+  onClick,
+  type = "button",
+}) => {
   return (
     <button
       id={id}
