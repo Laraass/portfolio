@@ -26,7 +26,7 @@ const Header = () => {
 
   // Button styles
   const buttonClasses =
-    "text-shade-100 text-base hover:text-primary hover:underline cursor-pointer transition duration-300";
+    "text-shade-100 text-base hover:text-primary active:text-primary cursor-pointer transition duration-300";
   const activeButtonClasses = "text-primary";
 
   // Buttons
@@ -37,6 +37,7 @@ const Header = () => {
           activeButton === "home" ? activeButtonClasses : ""
         }`}
         onClick={() => {
+          window.location.href = "#home";
           setIsOpen(false);
           setActiveButton("home");
         }}
@@ -45,22 +46,24 @@ const Header = () => {
       </button>
       <button
         className={`${buttonClasses} ${
-          activeButton === "projects" ? activeButtonClasses : ""
+          activeButton === "about" ? activeButtonClasses : ""
         }`}
         onClick={() => {
+          window.location.href = "#about-me";
           setIsOpen(false);
-          setActiveButton("projects");
+          setActiveButton("about");
         }}
       >
         About me
       </button>
       <button
         className={`${buttonClasses} ${
-          activeButton === "about" ? activeButtonClasses : ""
+          activeButton === "projects" ? activeButtonClasses : ""
         }`}
         onClick={() => {
+          window.location.href = "#projects";
           setIsOpen(false);
-          setActiveButton("about");
+          setActiveButton("projects");
         }}
       >
         Projects
@@ -70,6 +73,7 @@ const Header = () => {
           activeButton === "skills" ? activeButtonClasses : ""
         }`}
         onClick={() => {
+          window.location.href = "#skills";
           setIsOpen(false);
           setActiveButton("skills");
         }}
@@ -81,6 +85,7 @@ const Header = () => {
           activeButton === "contact" ? activeButtonClasses : ""
         }`}
         onClick={() => {
+          window.location.href = "#contact";
           setIsOpen(false);
           setActiveButton("contact");
         }}
@@ -130,7 +135,7 @@ const Header = () => {
         ref={dropdownRef}
         className={`flex flex-col gap-3 bg-shade-900 text-shade-100 md:hidden transition-all ease-in duration-500 transform ${
           isOpen
-            ? "max-h-[500px] opacity-100 p-4"
+            ? "max-h-[32rem] opacity-100 p-4"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
