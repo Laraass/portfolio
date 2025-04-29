@@ -15,6 +15,8 @@ const Contact: React.FC = () => {
       id="contact"
     >
       <form 
+      action="https://formspree.io/f/mnndjzqv"
+      method="POST"
       className="flex flex-col gap-6 w-full max-w-lg items-center">
         <h2 className="text-3xl font-bold text-primary">Contact me</h2>
 
