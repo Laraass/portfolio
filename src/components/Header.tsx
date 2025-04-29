@@ -45,11 +45,11 @@ const Header = () => {
       </button>
       <button
         className={`${buttonClasses} ${
-          activeButton === "education" ? activeButtonClasses : ""
+          activeButton === "projects" ? activeButtonClasses : ""
         }`}
         onClick={() => {
           setIsOpen(false);
-          setActiveButton("education");
+          setActiveButton("projects");
         }}
       >
         About me
@@ -63,7 +63,7 @@ const Header = () => {
           setActiveButton("about");
         }}
       >
-        Education & Projects
+        Projects
       </button>
       <button
         className={`${buttonClasses} ${
