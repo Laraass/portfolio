@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
   return (
     <section
       data-aos="fade-up"
-      className="max-w-7xl min-h-screen py-28 mx-auto flex justify-center items-center"
+      className="max-w-7xl min-h-screen py-28 mx-auto flex flex-col justify-center items-center gap-4"
       id="contact"
     >
       <form
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
 
         <InputField
           name="email"
-          label="E-mail"
+          label="E-mail (required)"
           placeholder="Enter your e-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -74,6 +74,16 @@ const Contact: React.FC = () => {
 
         <Button text="Submit" type="submit" />
       </form>
+
+      <p>
+        or contact me through{" "}
+        <a
+          href="mailto:lara.salman01@hotmail.com"
+          className="underline text-primary hover:text-primary/80"
+        >
+          e-mail
+        </a>
+      </p>
     </section>
   );
 };
